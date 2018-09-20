@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 游ゴシック, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ ゴシック", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: #1F1F1F;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin-right: auto;
+}
+
+.header-hamburger {
+  display: block;
+}
+@media (min-width: 768px) {
+  .header-hamburger {
+    display: none;
+  }
+}
+
+.header-navbtn {
+  width: 42px;
+  height: 42px;
+  border: 1px solid white;
+  border-radius: 6px;
+  background: url(../images/navbtn.png) no-repeat;
+  background-size: 40px 40px;
+  margin-top: 12px;
+  margin-left: 50px;
+}
+
+.globalnav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  background-color: #1F1F1F;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .globalnav {
+    display: flex;
+    position: static;
+  }
+  .globalnav li {
+    height: 20px;
+    padding: 0 25px 20px 0
+  }
+}
+
+.globalnav a {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #333;
+  text-decoration: none;
+  text-align: center;
+  line-height: 100%;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .globalnav a {
+    border-top: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px;
+    border-bottom: dotted 3px #fff;
+  }
+  .globalnav li a:hover {
+    font-weight: bold;
+    border-bottom: dotted 3px #eb845b;
+  }
+}
+
+.keyvisual img {
+  width: 100%;
+  background-size: cover;
+  margin-bottom: 41px;
+  z-index: 1;
+}
+
+#slider img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  }
+}
+
+.information {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .information {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.hours {
+  border: 5px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+  line-height: 1.5em;
+}
+.hours h3 {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #683408;/*文字色*/
+  background: #f3c498;/*背景色*/
+  border-left: solid 5px #a84e04;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+.access {
+  border: 5px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+  line-height: 1.5em;
+}
+.access h3 {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #683408;/*文字色*/
+  background: #f3c498;/*背景色*/
+  border-left: solid 5px #a84e04;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+.article {
+  width: 600px;
+  margin-left: 40px;
+  margin-top: 10px;
+  line-height: 1.4em;
+}
+.article h2 {
+  border-bottom: double 5px #FFC778;
+  font-size: 1.8em;
+  line-height: 1.4em;
+}
+
+.outline {
+  text-align: left;
+  line-height: 1.7em;
+}
+.outline h2{
+  margin-bottom: 20px;
+}
+.care {
+  margin-top: 100px;
+  margin-bottom: 80px; 
+}
+@media (max-width: 767px) {
+  .article {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* about */
+.about {
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.owner {
+  text-align: center;
+  padding-top: 50px;
+  
+}
+.owner img {
+  width: 90%;
+  border: solid 3px #FFC778;
+}
+.about p {
+  margin: 20px;
+  line-height: 1.7em;
+}
+
+
+/* first */
+.flow {
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.flow h3 {
+  padding: .5em .75em;
+  margin: 30px 0 20px 0;
+  background: #f4f4f4;
+  border-top: 1px dashed #ccc;
+  border-bottom: 1px dashed #ccc;
+  box-shadow: 0 7px 10px -5px rgba(0, 0, 0, .1) inset;
+}
+.discript img {
+  min-width: 250px;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.discript {
+  display: flex;
+}
+.discript p {
+  margin-left: 10px;
+  line-height: 1.7em;
+}
+
+
+/* access */
+.accessmap{
+  text-align: left;
+}
+
+.gmap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+ }
+  
+ .gmap iframe,
+ .gmap object,
+ .gmap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ }
+
+.accessmap p {
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #1F1F1F;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
